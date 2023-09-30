@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.formulario h1{
+    font-size: 50px;
+    margin-left: 70px;
+}
+
+.formulario .contenido{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 70px;
+
+}
+
+.formulario .contenido #p{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.contenido .puntos{
+    display: flex;
+}
+.contenido .puntos p{
+    margin: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+}
+form label{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+form input.active{
+    background-color: hsl(4, 100%, 67%);
+}
+
+/* form label #mensaje{
+    display: none;
+    color: hsl(4, 100%, 67%);
+} */
+
+form input{
+    height: 40px;
+    width: 357px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    padding: 0 0 0 20px ;
+}
+
+.contenido button{
+    color: hsl(0, 0%, 100%); 
+    background-color: hsl(234, 29%, 20%);
+    height: 40px ;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 378px;
+}
+
+.contenido button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+
+.imagen{
+    margin-top: 15px;
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/illustration-sign-up-desktop.svg);
+}
+
+
+
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 30%;
+    height: 400px;
+    padding: 50px 0 0 50px;
+    border-radius: 25px;
+    z-index: 1;
+    margin-top: 600px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.mensajes img{
+    width: 50px;
+}
+
+.mensajes h1{
+    font-size: 40px;
+    line-height: 1;
+    padding-top: 30px;
+}
+
+.mensajes p{
+    padding: 20px 30px 40px 0 ;
+    
+}
+
+.mensajes button{
+    width: 90%;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(235, 18%, 26%);
+    margin-bottom: 10px;
+}
+.mensajes button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(234, 29%, 20%); /* Color de fondo con opacidad */
+    z-index: 0;
+  }
+
+.attribution{
+    font-size: 11px; text-align: center; 
+}
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:320px) and (max-width:580px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .formulario{
+        position: relative; 
+        width: 100%;
+    }
+
+    .formulario h1{
+        margin: 0;
+        width: 300px;
+        padding: 20px 0 0 20px;
+        font-size: 40px;
+    }
+
+    .formulario #p{
+        padding: 0 0 0 20px;
+    }
+    .formulario .contenido{
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0 0px;
+    }
+    .contenido .puntos{
+        display: flex;
+        margin: 0 0 0 20px;
+        height: 50px;
+    }
+    .contenido .puntos p{
+        margin: 15px 16px 10px 10px;
+    }
+ 
+    .imagen{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 300px;
+        border-radius: 0 0 ;
+        background-image: url(../images/illustration-sign-up-mobile.svg);
+        background-size: 100%;
+    }
+    form label{
+        margin-left: 20px; ;
+    }
+    form input{
+        margin-left: 20px; ;
+        height: 40px;
+        width: 295px;
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 10px;
+        padding: 0 0 0 20px ;
+    }
+
+    .contenido button{
+        margin-left: 20px; 
+        height: 45px ;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 316px;
+        margin-bottom: 15px;
+    }
+    .mensajes{
+        width: 70%;
+        padding: 20px;
+        z-index: 3;
+    }
+
+    .background{
+        width: 100%;
+        z-index: 2;
+    }
+
+    
+}
